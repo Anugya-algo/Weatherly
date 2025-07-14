@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+    <h1 class="title">Anugya, Let's check the weather</h1>
+    <p class="subtitle">Beautiful forecasts, everywhere</p>
+
+    <form id="weatherForm" class="search-bar">
+      <input id="locationInput" type="text" placeholder="Enter city name..." required />
+      <button type="submit">Go</button>
+    </form>
+
+    <div class="weather-card hidden" id="weatherResult"><b>
+      <h2 class="location" id="cityName"><i class="fa fa-map-marker"></i></h2>
+      <img id="conditionIcon" class="weather-icon" />
+      <div class="temp" id="temperature">--</div>
+      <div class="condition-text" id="conditionText">--</div>
+      <p class="feels-like" id="feelsLike"> --° </p></b>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <p><b> Humidity</b></p>
+          <h3 id="humidity">--%</h3>
+        </div>
+        <div class="info-box">
+          <p><b> Wind Speed</b></p>
+          <h3 id="wind">-- km/h</h3>
+        </div>
+        <div class="info-box">
+          <p><b> Pressure</b></p>
+          <h3 id="pressure">-- hPa</h3>
+        </div>
+        <div class="info-box">
+          <p><b>Visibility</b> </p>
+          <h3 id="visibility">-- km</h3>
+        </div>
+      </div>
+
+      <div class="uv-container">
+        <p><b>UV Index</b> </p>
+        <div class="uv-bar">
+          <div id="uvValue" class="uv-progress"></div>
+        </div>
+        <div class="uv-number" id="uvIndex">--</div>
+      </div>
+    </div>
+
+    <p class="error-msg" id="error"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  background: linear-gradient(to top right, #5d9cec, #4a90e2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  color: white;
+  max-width: 6100px;
+  font-size: larger;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.location-input {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input[type="text"] {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 90%;
+  outline: none;
+  font-size: 2rem;
+}
+
+button {
+  padding: 0.7rem 2.2rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.3);
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: rgba(255,255,255,0.4);
+}
+.weatherResult {
+  margin-top: rem;
+  text-align: center;
+  font-size: 100px;
+}
+
+/* Card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 2rem; /* Increase padding */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: white;
+  transition: 0.3s ease-in-out;
+  font-size: 35px;
+
+  width: 100%;
+  max-width: 600px;  /* Increase from 480px to 600px or more */
+  margin: 0 auto;    /* Center it */
+}
+
+
+.weather-icon {
+  color: white;
+  width: 150px;
+  height: 150px;
+  margin: 1rem 0;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight:bold;
+}
+
+.condition-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+.feels-like {
+  font-size: 1.9rem;
+  color: #ffffff;
+  font-size: large;
+}
+
+/* Grid layout */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* UV index */
+.uv-container {
+  margin-top: 1.5rem;
+}
+.uv-bar {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  height: 10px;
+  margin: 0.5rem auto;
+  width: 80%;
+  position: relative;
+}
+.uv-progress {
+  background: linear-gradient(to right, green, orange, red);
+  height: 10px;
+  width: 0%;
+  border-radius: 20px;
+  transition: width 0.5s;
+}
+.uv-number {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.error-msg {
+  color: #ffcccc;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
