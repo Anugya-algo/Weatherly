@@ -3,7 +3,7 @@ const input = document.getElementById('locationInput');
 const result = document.getElementById('weatherResult');
 const errorEl = document.getElementById('error');
 
-const apiKey = "d854b1b94821440690354557251107";
+const apiKey = "****************************************";
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
